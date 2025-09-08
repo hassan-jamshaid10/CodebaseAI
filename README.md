@@ -1,4 +1,4 @@
-# 🚀 Codebase AI
+<img width="1902" height="913" alt="image" src="https://github.com/user-attachments/assets/0c92bae8-aa8c-483f-964c-d5a39a3113b4" /># 🚀 Codebase AI
 
 > **The AI Code Explainer** - Built to make you extraordinarily productive, Codebase AI is the best way to understand and interact with codebases using AI.
 
@@ -7,6 +7,8 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-yellow.svg)](https://python.org/)
 [![LangChain](https://img.shields.io/badge/LangChain-0.1+-red.svg)](https://langchain.com/)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+## Preview
+![CodeBase AI](./image.png)
 
 ## 📋 Table of Contents
 
