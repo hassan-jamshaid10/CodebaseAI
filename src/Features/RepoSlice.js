@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import api from "../Api/api";
 
-// Load a repo with query param
+
 export const loadRepo = createAsyncThunk(
   "repo/loadRepo",
   async (repoUrl, thunkAPI) => {
@@ -14,7 +14,6 @@ export const loadRepo = createAsyncThunk(
   }
 );
 
-// Ask a question (only if repo is loaded)
 export const askQuestion = createAsyncThunk(
   "repo/askQuestion",
   async (question, thunkAPI) => {
@@ -35,8 +34,8 @@ export const askQuestion = createAsyncThunk(
 const repoSlice = createSlice({
   name: "repo",
   initialState: {
-    repo: null,      // stores repo load result
-    answer: null,    // stores answer from ask
+    repo: null,     
+    answer: null,  
     loading: false,
     error: null,
   },
@@ -51,7 +50,7 @@ const repoSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      // Load Repo
+      
       .addCase(loadRepo.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -65,7 +64,7 @@ const repoSlice = createSlice({
         state.error = action.payload;
       })
 
-      // Ask Question
+ 
       .addCase(askQuestion.pending, (state) => {
         state.loading = true;
         state.error = null;
